@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Build Img Editor JS Coding Nepal</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/d575fe1d69.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Easy Images Editor</h1>
+      <div class="content">
+        <div class="filters">
+          <div class="btns">
+            <button class="brightness active" id="brightness">
+              Brigthness
+            </button>
+            <button class="saturate" id="saturate">Saturation</button>
+            <button class="inversion" id="inversion">Inversion</button>
+            <button class="gray" id="grayscale">Grayscale</button>
+          </div>
+          <div class="inp">
+            <div class="percentage">
+              <span class="filter_applicate">Brightness</span>
+              <span class="percent">50%</span>
+            </div>
+            <input type="range" value="50" />
+          </div>
+          <div class="img_rotate">
+            <p>rotate & Flip</p>
+            <div class="buttons_lip">
+              <i class="fa-solid fa-arrow-rotate-left" id="left"></i>
+              <i class="fa-solid fa-arrow-rotate-right" id="right"></i>
+              <i class="fa-solid fa-crop-simple" id="simple"></i>
+              <i class="fa-solid fa-crop" id="crop"></i>
+            </div>
+          </div>
+        </div>
+        <div class="image">
+          <img src="imgs/01.jpg" class="image" alt="image" />
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="refresh">Refresh Filters</button>
+        <div class="choose_save">
+          <input class="file" type="file" accept="image/*" hidden />
+          <button class="choose">Choose Image</button>
+          <button class="save">Save Image</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
